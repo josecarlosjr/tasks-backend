@@ -10,16 +10,16 @@ import br.ce.wcaquino.taskbackend.utils.ValidationException;
 
 public class TaskControllerTest {
   
-  @Mock
-  private TaskRepo taskRepo;
+  //@Mock
+  //private TaskRepo taskRepo;
   
-  @InjectMocks
-  private TaskController controller;
+  //@InjectMocks
+  //private TaskController controller;
   
-  @Before
-  public void setup() {
-    MockitoAnnotations.initMocks(this);
-  }
+  //@Before
+  //public void setup() {
+    //MockitoAnnotations.initMocks(this);
+  //}
   
   
   @Test
