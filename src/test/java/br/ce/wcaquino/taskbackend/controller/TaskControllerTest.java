@@ -9,6 +9,7 @@ import br.ce.wcaquino.taskbackend.utils.ValidationException;
 
 
 public class TaskControllerTest {
+  
   @Mock
   private TaskRepo taskRepo;
   
@@ -33,12 +34,11 @@ public class TaskControllerTest {
       Assert.assertEquals("Fill the task description", e.getMessage());
       //TODO auto-generate catch block
       //e.printStackTrace();
-    }
-    
+    }   
   
   }
-  @Test
-  public class TaskControllerTest {
+  
+  @Test 
   public void naoDeveSalvarTarefaSemData() {
     Task todo = new Task();
     todo.setTask("Descrição");
@@ -51,14 +51,12 @@ public class TaskControllerTest {
       Assert.assertEquals("Fill the due date", e.getMessage());
       //TODO auto-generate catch block
       //e.printStackTrace();
-    }
-    
-    
+    }    
   
   }
     
-  @Test  
-  public class TaskControllerTest {
+  
+  @Test 
   public void naoDeveSalvarTarefaComDataPassada() {
     Task todo = new Task();
     todo.setTask("Descrição");
@@ -73,10 +71,9 @@ public class TaskControllerTest {
       //e.printStackTrace();
     }
     
-  
   }
-  @Test  
-  public class TaskControllerTest {
+  
+  @Test    
   public void deveSalvarTarefaComSucesso() {
     Task todo = new Task();
     todo.setTask("Descrição");
@@ -85,8 +82,4 @@ public class TaskControllerTest {
     controller.save(todo);
     
     }
-    
-  
-  }
-
 }
