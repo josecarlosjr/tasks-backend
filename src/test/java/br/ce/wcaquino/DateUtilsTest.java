@@ -1,5 +1,12 @@
 package br.ce.wcaquino.taskbackend.utils;
 
+import java.time.LocalDate;
+import org.junit.Assert;
+import org.junit.Test;
+import org.mockito.Mock;
+import br.ce.wcaquino.taskbackend.model.Task;
+import br.ce.wcaquino.taskbackend.utils.ValidationException;
+
 public class DateUtilsTest {
   
   @Test 
